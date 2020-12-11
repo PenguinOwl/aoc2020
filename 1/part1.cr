@@ -2,7 +2,7 @@
 
 input = File.read("input.txt").strip
 
-entries = input.split("\n").map{|e| e.to_i}
+entries = input.split("\n").map(&.to_i)
 
 bottom = 0
 top = entries.size - 1
